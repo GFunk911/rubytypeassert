@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "ruby-typeassert"
+  s.name = "rubytypeassert"
   s.version = "0.0.1"
   s.date = "2008-04-28"
   s.summary = "Automatic Type Assertions"
