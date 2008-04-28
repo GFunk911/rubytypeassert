@@ -141,7 +141,9 @@ class MethodDef
   end
 end
 
-require 'ruby2ruby'
-generate_local_class_defs!(File.dirname(__FILE__) + "/master.rb")
-add_advice!(ActiveRecord::Base)
-generate_local_class_defs!(File.dirname(__FILE__) + "/master.rb")
+def rta_run!(req_file)
+  require 'ruby2ruby'
+  generate_local_class_defs!(req_file)
+  add_advice!(ActiveRecord::Base)
+  generate_local_class_defs!(req_file)
+end
